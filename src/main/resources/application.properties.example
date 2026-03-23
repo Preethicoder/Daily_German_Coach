@@ -1,0 +1,23 @@
+# Example AI provider configuration (DO NOT put real secrets in source control)
+# Set the real values using environment variables or a secure vault.
+
+# Base URL for your AI provider's HTTP API (replace with real endpoint)
+ai.provider.url=https://api.example.com/v1/generate
+
+# Model to use (your value: gemini-3-flash-preview)
+ai.provider.model=gemini-3-flash-preview
+
+# The API key should NOT be checked into the repo. Instead set as environment variable:
+# macOS zsh example: export AI_PROVIDER_KEY=your_real_api_key_here
+ai.provider.key=
+
+# Provider type: 'gemini' (Google Generative Models) or 'openai' or 'generic'
+ai.provider.type=gemini
+
+# If your provider expects the API key as a query parameter (common for Google API keys),
+# set this to true. If your provider expects a Bearer token in Authorization header, set false.
+ai.provider.useKeyQuery=true
+
+# Note: In Spring Boot, you can set the environment variable AI_PROVIDER_KEY and then
+# map it to 'ai.provider.key' by starting the JVM with: -Dai.provider.key=$AI_PROVIDER_KEY
+# or by setting the property in a secure runtime config (preferred).
