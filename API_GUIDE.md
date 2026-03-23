@@ -171,13 +171,6 @@ curl -X POST http://localhost:8080/api/german/check-sentence \
 
 ## ⚙️ **Configuration**
 
-Your `.env` file:
-```bash
-export AI_PROVIDER_KEY="AIzaSyB2ciqB9aNQA68nVdKBczYZtxeDTPmZ7BY"
-export AI_PROVIDER_URL="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
-export AI_PROVIDER_USE_KEY_QUERY=true
-export GCP_PROJECT_ID="gen-lang-client-0988320929"
-```
 
 ---
 
